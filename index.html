@@ -45,6 +45,13 @@
             display: flex;
             justify-content: center;
             gap: 20px; /* 버튼 사이의 간격 조정 */
+            flex-wrap: wrap; /* 작은 화면에서 버튼이 자동으로 줄바꿈 되도록 함 */
+        }
+        @media (max-width: 600px) {
+            .button-image {
+                width: 100px; /* 작은 화면에서는 버튼 크기를 줄임 */
+                height: 100px; /* 작은 화면에서는 버튼 크기를 줄임 */
+            }
         }
     </style>
 </head>
